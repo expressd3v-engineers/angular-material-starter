@@ -1,10 +1,17 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: [
+    './app.component.scss',
+    './angular-material.theme.scss'
+  ]
 })
-export class AppComponent {
-  title = 'Angular Material Starter';
+export class AppComponent implements OnInit {
+  opened = true;
+
+  ngOnInit() {
+    
+  }
 }
